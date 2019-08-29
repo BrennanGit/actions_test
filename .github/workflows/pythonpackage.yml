@@ -33,3 +33,9 @@ jobs:
       run: |
         pip install pytest
         pytest
+    - name: Check other things
+      run: |
+        pwd
+        ls -la
+        ls -la /
+
