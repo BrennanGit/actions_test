@@ -19,7 +19,7 @@ def wrap_string(to_wrap, border='#', full=False,
     if sides:
         length += 2 * len(border) + 2 * len(lpad)
     if top:
-        result += border * math.ceil(length / len(border))
+        result += border * int(math.ceil(length / len(border)))
     for line in lines:
         print(len(line))
         if sides:
@@ -29,7 +29,7 @@ def wrap_string(to_wrap, border='#', full=False,
             result += '\n{}'.format(line)
     result += '\n'
     if bottom:
-        result += border * math.ceil(length / len(border))
+        result += border * int(math.ceil(length / len(border)))
 
     return result
 
