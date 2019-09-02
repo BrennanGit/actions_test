@@ -1,3 +1,4 @@
+from __future__ import division
 import sys
 import math
 
@@ -14,7 +15,6 @@ def wrap_string(to_wrap, border='#', full=False,
     lines = to_wrap.splitlines()
     longest_line = max(lines, key=lambda x: len(x))
     length = len(longest_line)
-    print(length)
 
     if sides:
         length += 2 * len(border) + 2 * len(lpad)
@@ -38,4 +38,4 @@ if __name__ == '__main__':
     print()
     print(wrap_string(' '.join(sys.argv[1:]), full=True, border='[]'))
     print()
-    print(wrap_string('a\nstring\nwith\nlines', full=True, border='[]'))
+    print(wrap_string('a\nstring\n\nwith\nlines', full=True, border='[]'))
