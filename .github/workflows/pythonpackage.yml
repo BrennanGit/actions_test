@@ -3,7 +3,7 @@ name: Python package
 on:
   push:
     paths:
-      - '.github/workflows/docs.yml'
+      - '.github/workflows/pythonpackage.yml'
       - '**/doc/**'
 
 jobs:
