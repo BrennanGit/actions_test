@@ -40,6 +40,5 @@ jobs:
     - name: Check other things
       run: |
         pwd
-        ls -la
-        ls -la /
+        ls
 
